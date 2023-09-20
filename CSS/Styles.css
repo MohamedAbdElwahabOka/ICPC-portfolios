@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    background-color: #D7AC5B;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+.btn {
+    font-size: small;
+    background-color: #B12025;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    /* Add a smooth transition effect */
+}
+
+.btn:hover {
+    background-color: #f5a205;
+    /* Change the button color on hover */
+}
+
+.btn-download {
+    margin-left: auto;
+    /* Move the button to the right */
+}
+
+.logo {
+    /* border: solid; */
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.left {
+    width: 100%;
+    max-width: 500px;
+    padding-right: 20px;
+}
+
+.left h1 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.right {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.social-icons {
+    margin-top: 20px;
+    margin-top: 20px;
+    /* border: solid; */
+    /* width: auto; */
+}
+
+.social-icons a i {
+    background-color: #f5a205;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 30px;
+    /* border: solid; */
+    /* Add a smooth color transition effect */
+}
+
+.icon-link {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #B12025;
+    transition: color 0.3s;
+    /* Add a smooth color transition effect */
+}
+
+.icon-link:hover {
+    color: #0056b3;
+    /* Change the icon color on hover */
+}
+
+.profile-photo {
+    max-height: 200px;
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+    /* Center the photo horizontally */
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+    .content {
+        flex-wrap: nowrap;
+    }
+
+    .left {
+        width: 50%;
+        max-width: none;
+        padding-right: 40px;
+    }
+
+    .right {
+        width: 50%;
+        max-width: none;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .profile-photo {
+        max-height: 100%;
+        max-width: 100%;
+        /* Set to 100% to fit the container */
+    }
+}
